@@ -6,13 +6,19 @@ green - #8cc53e
 pink - #ea1f77
  */
 
- .jumbotron {
+.jumbotron {
     background-color: #8272ac;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 h1 {
     color: white;
-    font-size: 70px;
+    font-size: 100px;
     font-family: 'Lilita One', cursive;
     font-weight: 400;
 }
@@ -83,9 +89,25 @@ h3 {
     background-color: #42b2df;
     padding: 5px;
     padding-top: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .devoured-candy-box {
     margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
 }
+
+.available-candy {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 0px;
+    display: flex;
+}
+
+.devour-button {
+    float: right;
+}
+
+
