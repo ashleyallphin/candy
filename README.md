@@ -97,4 +97,5 @@ All the files and directories from the steps above should look like the followin
 * Node 
 * Express
 * Handlebars
-*a homemade ORM
+* ORM
+* HTML, CSS
