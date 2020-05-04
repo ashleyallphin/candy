@@ -1,11 +1,16 @@
 //connect Node to MySQL
-var mysql = require('mysql');
-var connection = mysql.createConnection({
-    host: 'fugfonv8odxxolj8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-    user: 'z46k5i0daiermb9y',
-    password: 'zxwb35z5o6lu0h5c',
-    database: 'hf6titk4cbuz194d',
-})
+var mysql = require("mysql");
+
+if (process.env.JAWSDB_URL) {
+    connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+    connection = mysql.createConnection({
+        host: 'localhost',
+        user: 'root',
+        password: 'wallpaper',
+        database: 'candy_db',
+    });
+};
 
 connection.connect(function(err){
     if(err)throw err;
