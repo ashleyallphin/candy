@@ -1,10 +1,10 @@
 //connect Node to MySQL
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-    host: 'icopoghru9oezxh8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-    user: 'k8gp258l5e5r8izn',
-    password: 'ihzop6lx7gaf8i7w',
-    database: 'funzar6wy8fd1hsl',
+    host: 'fugfonv8odxxolj8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    user: 'z46k5i0daiermb9y',
+    password: 'zxwb35z5o6lu0h5c',
+    database: 'hf6titk4cbuz194d',
 })
 
 connection.connect(function(err){
