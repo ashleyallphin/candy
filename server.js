@@ -11,11 +11,6 @@ var PORT = process.env.PORT || 8080;
 app.use(express.static(__dirname + '/public'));
 
 
-//I can get rid of this, I think.
-app.use(bodyParser.urlencoded({
-    extended: false
-}))
-
 app.use(methodOverride('_method'));
 app.engine('handlebars', exphhbs({
     //main.handlebars
