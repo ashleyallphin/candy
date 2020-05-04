@@ -16,14 +16,14 @@ This is a candy logger app using MySQL, Node, Express, Handlebars and a homemade
 
 ### Functionality
 
-All: 
+All of the candies in the database are displayed using the `selectAll()` method: 
 ![homepage][image]
 
 [image]: public/assets/images/candy-index.png "Homepage"  
 <br/>
 
 
-* When a user submits a candy's name, the app will display the candy on the left side of the page, waiting to be devoured.
+* When a user submits a candy's name in the new candy form, the app will display the candy on the left side of the page, waiting to be devoured, using the `insertOne()` method.
 
     Adding new candy: 
     ![new-candy][image1]
@@ -31,7 +31,7 @@ All:
     [image1]: public/assets/videos/new-candy.gif "Adding New Candy Action"  
 <br/><br/>
 
-* Each candy in the waiting area also has a `Devour!` button. When the user clicks it, the candy will move to the right side of the page.
+* Each candy in the waiting area also has a `Devour!` button. When the user clicks it, the candy will move to the right side of the page, using the `updateOne()` method.
 
     Devouring candy: 
     ![devour-candy][image2]
@@ -51,7 +51,7 @@ All:
 
 #### Directory structure
 
-All the recommended files and directories from the steps above should look like the following structure:
+All the files and directories from the steps above should look like the following structure:
 
 ```
 .

@@ -4,21 +4,21 @@ var connection = require('./connection.js');
 //methods
 var orm = {
 //display all the candy in the database    
-    all: function(tableInput, cb){
+    selectAll: function(tableInput, cb){
         connection.query('SELECT * FROM '+tableInput+';', function(err, result){
             if(err) throw err;
             cb(result)
         })
     },
 //update candy to eaten
-    update: function(tableInput, condition, cb){
+    updateOne: function(tableInput, condition, cb){
         connection.query('UPDATE '+tableInput+' SET devoured=true WHERE id='+condition+';', function(err, result){
             if(err)throw err;
             cb(result);
         })
     },
 //create a new candy
-    create: function(tableInput, val, cb){
+    insertOne: function(tableInput, val, cb){
         connection.query('INSERT INTO '+tableInput+" (candy_name) VALUES ('"+val+"');", function(err, result){
             if(err) throw err;
             cb(result);

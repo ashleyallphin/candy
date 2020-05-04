@@ -6,7 +6,7 @@ var candy = require("../models/candy.js");
 var router = express.Router();
 
 router.get("/", function (req, res) {
-    candy.all(function(candy_data){
+    candy.selectAll(function(candy_data){
         // console.log(candy_data);
     
         res.render("index", {candy_data});
@@ -15,7 +15,7 @@ router.get("/", function (req, res) {
 
 //devour candy (set devoured state to true)
 router.put('/candy/update', function(req,res){
-    candy.update(req.body.candy_id, function(result){
+    candy.updateOne(req.body.candy_id, function(result){
         // console.log(result);
         res.redirect('/');
     });
@@ -23,7 +23,7 @@ router.put('/candy/update', function(req,res){
 
 //add new candy
 router.post('/candy/create', function(req,res){
-    candy.create(req.body.candy_name, function(result){
+    candy.insertOne(req.body.candy_name, function(result){
         res.redirect("/");
     })
 })
