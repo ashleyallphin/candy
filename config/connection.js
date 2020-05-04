@@ -1,10 +1,10 @@
 //connect Node to MySQL
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'wallpaper',
-    database: 'candy_db',
+    host: 'icopoghru9oezxh8.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    user: 'k8gp258l5e5r8izn',
+    password: 'ihzop6lx7gaf8i7w',
+    database: 'funzar6wy8fd1hsl',
 })
 
 connection.connect(function(err){
