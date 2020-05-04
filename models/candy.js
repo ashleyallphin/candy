@@ -3,20 +3,20 @@ var orm = require('../config/orm.js');
 
 var candy = {
     // Display all candy in the db.
-    selectAll: function(cb){
-        orm.selectAll('candy', function(res) {
+    all: function(cb){
+        orm.all('candy', function(res) {
             cb(res);
         })
     },
     
     //update the candy to devoured
-    updateOne: function(id, cb){
-        orm.updateOne('candy',id,cb);
+    update: function(id, cb){
+        orm.update('candy',id,cb);
     },
 
     //create new candy in the database
-    insertOne: function(name, cb){
-        orm.insertOne('candy', name, cb);
+    create: function(name, cb){
+        orm.create('candy', name, cb);
     },
     
     //delete some candy from the database
