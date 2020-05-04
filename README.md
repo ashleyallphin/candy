@@ -1,22 +1,52 @@
-# candy
+Candy Logger
+======
+
+
+Ashely Allphin
+
 UTA-VIRT-FSF-PT-01-2020-U-LOL Homework #14
 
+Deployed to Heroku [here](https://candy-codingbootcamp-14.herokuapp.com/).
+<br/><br/>
 
-## Node Express Handlebars
 
-### Overview
+## Overview
 
-This is a candy app logger using MySQL, Node, Express, Handlebars and a homemade ORM.
+This is a candy logger app using MySQL, Node, Express, Handlebars and a homemade ORM.
 
-### Before You Begin
+### Functionality
+
+All: 
+![homepage][image]
+
+[image]: public/assets/images/candy-index.png "Homepage"  
+<br/>
+
 
 * When a user submits a candy's name, the app will display the candy on the left side of the page, waiting to be devoured.
 
-* Each candy in the waiting area also has a `Devour it!` button. When the user clicks it, the candy will move to the right side of the page.
+    Adding new candy: 
+    ![new-candy][image1]
+
+    [image1]: public/assets/videos/new-candy.gif "Adding New Candy Action"  
+<br/><br/>
+
+* Each candy in the waiting area also has a `Devour!` button. When the user clicks it, the candy will move to the right side of the page.
+
+    Devouring candy: 
+    ![devour-candy][image2]
+
+    [image2]: public/assets/videos/devour-candy.gif "Devouring Candy Action"  
+  <br/><br/>
+
 
 * The app will store every candy in a database, whether devoured or not.
 
-* [Run-through of how the app should work:](https://youtu.be/msvdn95x9OM).
+    Table uses Devoured BOOLEAN to display whether devoured or not: 
+    ![db_table][image3]
+
+    [image3]: public/assets/images/db-table.png "db_table"  
+<br/><br/>
 
 
 #### Directory structure
@@ -58,6 +88,8 @@ All the recommended files and directories from the steps above should look like 
     └── layouts
         └── main.handlebars
 ```
+<br/><br/>
+
 
 
 ## Technologies Used
