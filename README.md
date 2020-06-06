@@ -2,7 +2,7 @@ Candy Logger
 ======
 
 
-Ashely Allphin
+Ashley Allphin
 
 UTA-VIRT-FSF-PT-01-2020-U-LOL Homework #14
 
